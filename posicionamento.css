@@ -1,0 +1,51 @@
+.caixa1 {
+    position: static;
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+}
+
+.caixa2 {
+  position: relative;
+  top: 20px;
+  left: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+}
+
+.container {
+  position: relative;
+  border: 1px solid black;
+  width: 400px;
+  height: 800px;
+}
+
+.caixa3 {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+
+.header {
+    position: sticky;
+    background-color: brown;
+    width: 100%;
+    top: 15px;
+}
+
+.icone {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.icone img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: green;
+    font-weight: 700;
+    text-align: center;
+}
+
+.parag1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    color: blue;
+    font-weight: 500;
+    line-height: 250%;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+    font-size: 30px;
+}
+
+.caixa1 {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    background-image: url("https://static.gazetaesportiva.com/uploads/imagem/2018/09/27/Sem-t%C3%ADtulo.png");
+    background-size: 150px;
+}
+
+.caixa2 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+}
+
+.button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: aquamarine;
+    opacity: 0.75;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px 15px 20px 25px;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+}
+
+.box p {
+    padding: 5px 10px 15px 20px;
+}

@@ -1,0 +1,50 @@
+h1 {
+    color: blue;
+    font-size: 40px;
+}
+
+#rodape {
+  background-color: red;  
+  font-size: 20px;
+}
+
+.caixa {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+input[type = "text"] {
+    background-color: blue;
+    color: yellow;
+}
+
+input::placeholder {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.input {
+    background-color: green;
+}
+
+.textos p {
+    color: blue;
+    font-size: 32px;
+    background-color: yellow;
+}
+
+p + span {
+    color: red;
+}
+
+.card > h3 {
+    color: orangered;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+h4, h5 {
+    color: brown;
+    font-size: 18px;
+}
