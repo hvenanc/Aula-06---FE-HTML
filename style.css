@@ -1,50 +1,83 @@
-h1 {
-    color: blue;
-    font-size: 40px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-#rodape {
-  background-color: red;  
-  font-size: 20px;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.caixa {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
+/* Container Flex Geral */
+.flex-container {
+    display: flex;
+    padding: 20px;
+    gap: 15px;
 }
 
-input[type = "text"] {
-    background-color: blue;
-    color: yellow;
+/* Cabeçalho: Alinhamento horizontal com espaçamento entre elementos */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
 }
 
-input::placeholder {
-    color: #FFF;
-    font-size: 20px;
+.nav-links {
+    display: flex;
+    gap: 20px;
 }
 
-.input {
-    background-color: green;
+/* Área Principal: Colunas lado a lado */
+.main-content {
+    flex: 1;
+    /* Faz o main ocupar o espaço restante verticalmente */
+    flex-wrap: wrap;
+    /* Permite quebrar linha em telas pequenas */
 }
 
-.textos p {
-    color: blue;
-    font-size: 32px;
-    background-color: yellow;
+.sidebar {
+    flex: 1;
+    /* Proporção menor */
+    min-width: 200px;
+    background-color: #ecf0f1;
+    border: 2px dashed #bdc3c7;
+    padding: 15px;
 }
 
-p + span {
-    color: red;
+.content {
+    flex: 3;
+    /* Proporção maior (3 vezes a sidebar) */
+    min-width: 300px;
+    background-color: #ffffff;
+    border: 2px solid #3498db;
+    padding: 15px;
 }
 
-.card > h3 {
-    color: orangered;
-    font-weight: 500;
-    font-size: 20px;
+/* Grid de Cards interno */
+.card-grid {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
-h4, h5 {
-    color: brown;
-    font-size: 18px;
+.card {
+    flex: 1 1 150px;
+    /* grow, shrink, basis */
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #34495e;
+    color: white;
+    justify-content: center;
 }

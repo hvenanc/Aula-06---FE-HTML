@@ -1,54 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Aula 05</title>
+    <title>Flex</title>
 </head>
 
 <body>
-    <h1>Meu título</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit atque, voluptate repellat non deserunt odit quis
-        nobis molestias maiores cum aliquam itaque inventore aut iusto, qui ullam, tempora harum mollitia.</p>
-    <h1>Outro Título</h1>
+    <header class="flex-container header">
+        <div class="logo">Logo</div>
+        <nav class="nav-links">
+            <div class="item">Link 1</div>
+            <div class="item">Link 2</div>
+            <div class="item">Link 3</div>
+        </nav>
+    </header>
 
-    <div class="caixa">
-        Caixa 1
-    </div>
+    <main class="flex-container main-content">
+        <aside class="sidebar">Sidebar (Navegação)</aside>
+        <section class="content">
+            <h1>Conteúdo Principal</h1>
+            <div class="card-grid">
+                <div class="card">Card 1</div>
+                <div class="card">Card 2</div>
+                <div class="card">Card 3</div>
+            </div>
+        </section>
+    </main>
 
-    <div class="caixa">
-        Caixa 2
-    </div>
-
-    <form>
-        <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-        <input type="email" name="email" id="email" class="input">
-    </form>
-
-    <div class="textos">
-        <p>Paragráfo 1</p>
-        <p>Paragráfo 2</p>
-    </div>
-
-    <p>Texto 1</p>
-    <span>Span 1</span>
-    <span>Span 2</span>
-    <span>Span 3</span>
-    <span>Span 4</span>
-
-    <div class="card">
-        <h3>Título do Card</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quod cupiditate neque iure facilis nisi repellendus explicabo modi accusamus fugit est, hic nulla quo nobis fugiat illo cumque rerum dolor.</p>
-    </div>
-
-    <h4>Título de nível 4</h4>
-    <h5>Título de nível 5</h5>
-
-    <footer id="rodape">
-        <p>&copy 2026 - Todos os direitos reservados</p>
+    <footer class="flex-container footer">
+        <p>Rodapé - Direitos Reservados</p>
     </footer>
 </body>
 
